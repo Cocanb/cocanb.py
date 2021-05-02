@@ -17,11 +17,12 @@ def toc(sentence):
     for i in initial:
         if i.isnumeric():
             nums.append(i)
-            i = "<num>"
+            initial[initial.index(i)] = "<num>"
     for i in initial:
         if (i[0] != "<" and i[-1] != ">"):
             additional += i[-1] + ("å" * (len(i) // 26)) + chr(ord('`') + (len(i) % 26))
             initial[initial.index(i)] = i[:-1]
-    final = "".join(initial) + "non" + additional
-    final = final.replace("<", " <").replace(">", "> ")
+    final = ("".join(initial) + "non" + additional).replace("<", " <").replace(">", "> ")
+    for num in nums:
+        final = final.replace("<num>", num, 1)
     return final
