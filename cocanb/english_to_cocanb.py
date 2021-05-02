@@ -10,6 +10,8 @@
 #     final = "".join(initial) + "non" + additional
 #     return final
 
+from spaces import add_spaces
+
 def toc(sentence):
     initial = sentence.split()
     additional = ""
@@ -25,4 +27,5 @@ def toc(sentence):
     final = ("".join(initial) + "non" + additional).replace("<", " <").replace(">", "> ")
     for num in nums:
         final = final.replace("<num>", num, 1)
+    final = add_spaces(final)
     return final
