@@ -1,1 +1,4 @@
-def add_diacritics()
+from re import sub
+from numpy.random import choice
+
+def add_diacritics(initial):

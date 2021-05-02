@@ -1,5 +1,6 @@
 from numpy.random import choice
 from re import findall, sub
+from unidecode import unidecode
 
 def add_spaces(initial):
     special = findall("<.*>", initial)
