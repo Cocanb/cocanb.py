@@ -10,7 +10,7 @@
 #     final = "".join(initial) + "non" + additional
 #     return final
 
-from spaces import add_spaces
+from .spaces import add_spaces
 
 def toc(sentence):
     initial = sentence.split()
