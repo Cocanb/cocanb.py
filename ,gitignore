@@ -1,4 +1,4 @@
-test.py
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -138,3 +138,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+test.py
+*/__pycache__
