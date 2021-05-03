@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-    name='mypackage',
-    version='beta1.0.0',
+    name='cocanb',
+    version='beta1.0.3',
     packages=['cocanb'],
     install_requires=[
         'importlib',
