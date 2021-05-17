@@ -15,7 +15,7 @@ from .diacritics import add_diacritics
 from re import sub
 
 def remove_punctuation(sentence):
-    return sentence
+    return sub("([^a-zA-Z\s\d<>])(?![^<]*>)", "", sentence)
 
 def toc(sentence):
     initial = remove_punctuation(sentence.split())
